@@ -3,7 +3,6 @@ package pages;
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.MediaEntityBuilder;
-import com.aventstack.extentreports.reporter.ExtentReporter;
 import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 import io.appium.java_client.android.AndroidDriver;
 import org.testng.ITestResult;
@@ -13,7 +12,6 @@ import utility.ConfigDataProvider;
 import utility.DriverFactory;
 import utility.ExcelDataProvider;
 import utility.Helper;
-
 import java.io.File;
 import java.net.MalformedURLException;
 

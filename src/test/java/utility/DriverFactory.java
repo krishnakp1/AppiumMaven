@@ -22,6 +22,7 @@ public class DriverFactory {
     }
 
     public static void quitDriver(AppiumDriver driver) {
+        System.out.println("About to quit driver");
         driver.quit();
         System.out.println("Driver quit performed");
     }

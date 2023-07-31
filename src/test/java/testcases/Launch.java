@@ -1,9 +1,6 @@
 package testcases;
 
-import io.appium.java_client.pagefactory.AppiumFieldDecorator;
 import org.openqa.selenium.support.PageFactory;
-import org.openqa.selenium.support.pagefactory.ElementLocatorFactory;
-import org.testng.Reporter;
 import org.testng.annotations.Test;
 import pages.Base;
 import pages.HomeScreen;

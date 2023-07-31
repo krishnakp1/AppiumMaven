@@ -3,7 +3,6 @@ package pages;
 import io.appium.java_client.android.AndroidDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
 
 public class HomeScreen {
@@ -27,7 +26,6 @@ public class HomeScreen {
 
     @FindBy(id = "com.code2lead.kwad:id/Tv1")
     WebElement previewText;
-
 
     public void enterValueAndValidate(String inputText) {
         enterValueBtn.click();
