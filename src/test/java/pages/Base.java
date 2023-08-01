@@ -9,7 +9,7 @@ import org.testng.ITestResult;
 import org.testng.Reporter;
 import org.testng.annotations.*;
 import utility.ConfigDataProvider;
-import utility.DriverFactory;
+import utility.DeviceFactory;
 import utility.ExcelDataProvider;
 import utility.Helper;
 import java.io.File;
@@ -37,12 +37,12 @@ public class Base {
     @BeforeClass
     public void setUp() throws MalformedURLException {
         System.out.println("APp Path: "+config.getDataFromConfig("appPath"));
-        driver = DriverFactory.initialize(config.getDataFromConfig("appPath"));
+        driver = DeviceFactory.initialize(config.getDataFromConfig("appPath"));
     }
 
     @AfterClass
     public void tearDown() {
-        DriverFactory.quitDriver(driver);
+        DeviceFactory.quitDriver(driver);
     }
 
     @AfterMethod

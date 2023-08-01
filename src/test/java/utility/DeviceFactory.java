@@ -8,7 +8,7 @@ import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.concurrent.TimeUnit;
 
-public class DriverFactory {
+public class DeviceFactory {
 
     public static AndroidDriver initialize(String appPath) throws MalformedURLException {
         DesiredCapabilities caps = new DesiredCapabilities();
