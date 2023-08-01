@@ -3,6 +3,7 @@ package pages;
 import io.appium.java_client.android.AndroidDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
 
 public class HomeScreen {
@@ -10,9 +11,8 @@ public class HomeScreen {
     AndroidDriver driver;
 
     public HomeScreen(AndroidDriver driver) {
-        System.out.println("Beginning Home screen driver initialization");
         this.driver = driver;
-        System.out.println("Home screen driver initialized");
+        PageFactory.initElements(driver, this);
     }
 
     @FindBy(xpath = "//android.widget.Button[@content-desc=\"Btn1\"]")
