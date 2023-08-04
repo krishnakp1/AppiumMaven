@@ -2,7 +2,7 @@
 <suite name = "My Test Suite">
     <test name = "My Test Name">
         <classes>
-            <class name = "testcases.Launch"/>
+            <class name = "testcases.LaunchTest"/>
         </classes>
     </test>
 </suite>

@@ -24,7 +24,7 @@ public class ConfigDataProvider {
     }
 
     public String getAppPath() {
-        return pro.getProperty("appUrl");
+        return pro.getProperty("appPath");
     }
 
     public String getProdUrl() {

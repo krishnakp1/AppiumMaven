@@ -20,12 +20,10 @@ public class DeviceFactory {
 
         driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
         System.out.println("Driver initialized");
-        System.out.println("driver: "+driver);
         return driver;
     }
 
     public static void quitDriver(AppiumDriver driver) {
-        System.out.println("About to quit driver");
         driver.quit();
         System.out.println("Driver quit performed");
     }
