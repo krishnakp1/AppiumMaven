@@ -34,15 +34,11 @@ public class Base {
         Reporter.log("Ending the activity", true);
     }
 
-    @Parameters({"appPath", "env", "tags", "url"})
+    @Parameters({"appPath", "env", "tags"})
     @BeforeClass
-    public void setUp(String appPath, String env, String tags, String url) throws MalformedURLException {
+    public void setUp(String appPath, String env, String tags) throws MalformedURLException {
 //        System.out.println("App Path: "+config.getDataFromConfig("appPath"));
 //        driver = DeviceFactory.initialize(config.getDataFromConfig("appPath"));
-        System.out.println("App path: " + appPath);
-        System.out.println("Env: "+env);
-        System.out.println("Tags: "+tags);
-        System.out.println("Url: "+url);
         driver = DeviceFactory.initialize(appPath);
     }
 

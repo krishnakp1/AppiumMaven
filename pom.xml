@@ -29,7 +29,6 @@
                         <suiteXmlFile>XMLFiles/${xmlFiles}</suiteXmlFile>
                     </suiteXmlFiles>
                     <systemPropertyVariables>
-                        <prodUrl>${url}</prodUrl>
                         <!--suppress UnresolvedMavenProperty -->
                         <pathToApk>${appPath}</pathToApk>
                         <!--suppress UnresolvedMavenProperty -->
